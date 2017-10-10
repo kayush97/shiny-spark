@@ -1,0 +1,56 @@
+//********************CopyRight 2017 EngineerWorks.*****************//
+//.....................Buttons.css...............................//
+//Made by Ayush Kumar//
+
+$radical: #F62459;
+$spray: #81CFE0;
+$turquoise: #4ECDC4;
+$crusta: #F2784B;
+$smoke: #ECECEC;
+$lynch: #6C7A89;
+$marino: #446CB3;
+$wisteria: #9B59B6;
+
+@mixin btn-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+
+.btn {
+  color:white;
+  text-decoration:none;
+  padding:5px 10px;
+  border-radius:3px;
+  font-size: 2em;
+}
+
+.radical {
+	@include btn-bg($radical);
+}
+.spray {
+	@include btn-bg($spray);
+}
+.turquoise{
+    @include btn-bg($turquoise);
+}
+.crusta {
+    @include btn-bg($crusta);
+}
+.smoke {
+    @include btn-bg($smoke);
+}
+.lynch {
+    @include btn-bg($lynch);
+}
+.marino {
+    @include btn-bg($marino);
+}
+.wisteria {
+    @include btn-bg($wisteria);
+}
